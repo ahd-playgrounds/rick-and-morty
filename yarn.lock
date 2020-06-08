@@ -7312,6 +7312,11 @@ normalize-url@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
+normalize.css@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
+  integrity sha1-q/sd2CRwZ04DIrU86xqvQSk45L8=
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -9465,6 +9470,11 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
+sass-mq@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/sass-mq/-/sass-mq-3.3.2.tgz#3472e04c31a432bcd55b3b604edc72ae9a4def1a"
+  integrity sha1-NHLgTDGkMrzVWztgTtxyrppN7xo=
+
 sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -9697,6 +9707,30 @@ sisteransi@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.4.tgz#386713f1ef688c7c0304dc4c0632898941cad2e3"
   integrity sha512-/ekMoM4NJ59ivGSfKapeG+FWtrmWvA1p6FBZwXrqojw90vJu8lBmrTxCMuBCydKtkaUe2zt4PlxeTKpjwMbyig==
+
+sky-toolkit-core@2.37.0:
+  version "2.37.0"
+  resolved "https://registry.yarnpkg.com/sky-toolkit-core/-/sky-toolkit-core-2.37.0.tgz#2c6cbcd2ed67984fbd12addd45efc62fee6ae832"
+  integrity sha512-a0Ax22cYuymt4sUeVlkAMBVO9qNG6vH2EsfnlHzMkTR/IjCzsAfBfa8TbLd2gFBZyIPCJBBjOat0027yxObI6w==
+  dependencies:
+    normalize.css "7.0.0"
+    sass-mq "^3.3.2"
+    supercell "^1.2.0"
+
+sky-toolkit-ui@2.38.0:
+  version "2.38.0"
+  resolved "https://registry.yarnpkg.com/sky-toolkit-ui/-/sky-toolkit-ui-2.38.0.tgz#aea199b35ef40a05eaca59b747a8e264072db9a0"
+  integrity sha512-jGbQuFvZiU8PVkwVYzyw1ZZnnSHAV/UNjufc0FXAr8N7QW0p98VA3CDmFN0LxRDfjWcv28Jgcl8y1U2F4OyX1g==
+  dependencies:
+    sky-toolkit-core "2.37.0"
+
+sky-toolkit@^2.37.0:
+  version "2.38.0"
+  resolved "https://registry.yarnpkg.com/sky-toolkit/-/sky-toolkit-2.38.0.tgz#e970bc8ff4310ef269b4aaee9aff51cce9cdc00a"
+  integrity sha512-KoBbd80HiNqm4+LUgfp3pch5wgHvm+fSCN/Kr+ZX6vmOMkxs4ZVcSUJZ2kEq8XUYMOeN4QP8HOZ3PL3Ig1DUIQ==
+  dependencies:
+    sky-toolkit-core "2.37.0"
+    sky-toolkit-ui "2.38.0"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -10150,6 +10184,11 @@ stylehacks@^4.0.0:
     browserslist "^4.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
+
+supercell@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/supercell/-/supercell-1.2.0.tgz#2227fffb9590e1e2ee5a3ef32223cdc6acd91c9e"
+  integrity sha1-Iif/+5WQ4eLuWj7zIiPNxqzZHJ4=
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -10848,9 +10887,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   version "1.0.5"
